@@ -22,4 +22,4 @@ links
 - tutorial article  : 
 
 i use this icons in my apps with this way , You can install and try them
-lite browser app:
+lite browser app:https://play.google.com/store/apps/details?id=com.companyname.lightmobile
