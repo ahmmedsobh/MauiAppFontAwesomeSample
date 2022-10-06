@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppFontAwesomeSample.MainPage"
+             xmlns:helper="clr-namespace:MauiAppFontAwesomeSample.Helpers">
+
+    <ContentPage.Resources>
+        <x:String x:Key="smile">&#xf118;</x:String>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <StackLayout>
+            
+            <!--image-->
+            
+            <Image WidthRequest="100" HeightRequest="100">
+                <Image.Source>
+                    <FontImageSource FontFamily="FAS" Glyph="{StaticResource smile}" Color="Blue" Size="50"/>
+                </Image.Source>
+            </Image>
+            
+            <!--ImageButton-->
+
+            <ImageButton HeightRequest="100" WidthRequest="100">
+                <ImageButton.Source>
+                    <FontImageSource FontFamily="FAS" Glyph="{StaticResource smile}" Color="White" Size="50"/>
+                </ImageButton.Source>
+            </ImageButton>
+            
+            <!--Label-->
+            <Label FontFamily="FAS" Text="{StaticResource smile}" FontSize="100" TextColor="Red" HorizontalTextAlignment="Center"/>
+
+            <!--image-->
+
+            <Image WidthRequest="100" HeightRequest="100">
+                <Image.Source>
+                    <FontImageSource FontFamily="FAS" Glyph="{Binding smile}" Color="Blue" Size="50"/>
+                </Image.Source>
+            </Image>
+
+            <!--ImageButton-->
+
+            <ImageButton HeightRequest="100" WidthRequest="100">
+                <ImageButton.Source>
+                    <FontImageSource FontFamily="FAS" Glyph="{Binding smile}" Color="White" Size="50"/>
+                </ImageButton.Source>
+            </ImageButton>
+
+            <!--Label-->
+            <Label FontFamily="FAS" Text="{Binding smile}" FontSize="100" TextColor="Red" HorizontalTextAlignment="Center"/>
+
+            <!--image-->
+
+            <Image WidthRequest="100" HeightRequest="100">
+                <Image.Source>
+                    <FontImageSource FontFamily="FAS" Glyph="{x:Static helper:FontAwesomeHelper.FaceSmile}" Color="Blue" Size="50"/>
+                </Image.Source>
+            </Image>
+
+            <!--ImageButton-->
+
+            <ImageButton HeightRequest="100" WidthRequest="100">
+                <ImageButton.Source>
+                    <FontImageSource FontFamily="FAS" Glyph="{x:Static helper:FontAwesomeHelper.FaceSmile}" Color="White" Size="50"/>
+                </ImageButton.Source>
+            </ImageButton>
+
+            <!--Label-->
+            <Label FontFamily="FAS" Text="{x:Static helper:FontAwesomeHelper.FaceSmile}" FontSize="100" TextColor="Red" HorizontalTextAlignment="Center"/>
+
+
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
