@@ -1,5 +1,6 @@
 # MauiAppFontAwesomeSample
 
+video tutorial : https://youtu.be/ShI1rd2BZFU
 
 
 in this tutorial we will learn
